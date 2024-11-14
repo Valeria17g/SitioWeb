@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voces en Silencio - Poesía del Alma</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Georgia', serif;
+        }
+        .navbar {
+            background-color: #2c3e50 !important;
+        }
+        .navbar-brand, .nav-link {
+            color: #ecf0f1 !important;
+        }
+        .poem-section {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .carousel-item img {
+            height: 400px;
+            object-fit: cover;
+        }
+        .poem {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border-left: 4px solid #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Voces en silencio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Pagina principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Poemas recientes</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="amor.html">Amor</a></li>
+                            <li><a class="dropdown-item" href="esfuerzo.html">Esfuerzo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Más poemas pronto</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mainCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="rosas.jpg" class="d-block w-100" alt="Poesía y sentimientos">
+                <div class="carousel-caption">
+                    <h3>Voces del Corazón</h3>
+                    <p>Donde las emociones se convierten en versos</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="escalar.jpg" class="d-block w-100" alt="Superación">
+                <div class="carousel-caption">
+                    <h3>Poemas de Superación</h3>
+                    <p>Inspiración en cada palabra</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="corazon.jpg" class="d-block w-100" alt="Amor">
+                <div class="carousel-caption">
+                    <h3>Poemas de Amor</h3>
+                    <p>Sentimientos en versos</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+
+    <div class="accordion accordion-flush mb-4" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
+                    Que son los poemas
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Un poema es una obra de poesía normalmente en verso, esté o no sujeto a los recursos poéticos clásicos de la métrica, el ritmo y la rima. También hay poemas en prosa. Un poema largo puede dividirse en «cantos», y uno breve en estrofas. Un conjunto de poemas es un poemario.</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+                    Porque leer poemas
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Enriquece la imaginación así, la poesía ayuda a fomentar la inteligencia creativa, necesaria no sólo para el arte sino también en la formación del pensamiento científico y la innovación tecnológica, al igual que en la resolución de conflictos.</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree">
+                    Algunos tipos
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Nos referimos al himno, la oda, la elegía, la sátira, la égloga, el romance, el epigrama, el caligrama, el peán y el epitalamio. Existen otras formas posibles del poema, sobre todo pertenecientes a otras tradiciones, como el haikú oriental, que es una forma de poema brevísimo y descriptivo.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class="display-4 text-center mb-4">Bienvenido a voces en silencio</h2>
+                
+                <div class="poem-section">
+                    <p>En este espacio, encontrarás una amplia variedad de poemas que abordan temas universales y profundos. Desde la decepción y el dolor hasta la alegría y el amor, cada verso refleja las emociones que nos acompañan en la vida. También exploramos la lucha y las dificultades que enfrentamos, así como la esperanza y el anhelo de un futuro mejor. Sumérgete en esta colección y déjate llevar por la belleza de la palabra. Aquí, cada poema es una invitación a sentir y reflexionar sobre nuestras propias experiencias.</p>
+                </div>
+
+        
+                <div class="poem-section">
+                    <h5 class="mb-4">Poemas sobre el fracaso en el deporte</h5>
+                    
+                    <div class="poem">
+                        <h6>"El fracaso" - Jorge Luis Borges</h6>
+                        <p>No hay nada más difícil que el silencio.<br>
+                        En la derrota, el viento se hace eco<br>
+                        de los sueños perdidos,<br>
+                        y el ardor del esfuerzo<br>
+                        se convierte en ceniza.</p>
+                    </div>
+
+                    <div class="poem">
+                        <h6>"La derrota" - Pablo Neruda</h6>
+                        <p>El que no ha perdido,<br>
+                        no sabe lo que es la batalla.<br>
+                        En cada caída hay un aprendizaje,<br>
+                        una lección que el alma guarda,<br>
+                        un eco de lo que pudo ser.</p>
+                    </div>
+
+                    <div class="poem">
+                        <h6>"El juego" - Octavio Paz</h6>
+                        <p>En el juego de la vida,<br>
+                        la victoria es un espejismo.<br>
+                        La derrota, un maestro cruel,<br>
+                        que nos enseña a levantarnos<br>
+                        y a enfrentar el nuevo día.</p>
+                    </div>
+                </div>
+
+      
+                <div class="poem-section">
+                    <h5 class="mb-4">Poemas sobre el estrés de no cumplir expectativas</h5>
+                    
+                    <div class="poem">
+                        <h6>"Presión" - Mario Benedetti</h6>
+                        <p>Las expectativas pesan<br>
+                        como montañas en mis hombros.<br>
+                        Cada día es una prueba,<br>
+                        cada hora un desafío,<br>
+                        y mi mente grita en silencio.</p>
+                    </div>
+
+                    <div class="poem">
+                        <h6>"Espejismos" - Gloria Fuertes</h6>
+                        <p>Me miro al espejo<br>
+                        y veo lo que no soy,<br>
+                        lo que otros quieren que sea,<br>
+                        mientras mi verdadero yo<br>
+                        se desvanece entre suspiros.</p>
+                    </div>
+
+                    <div class="poem">
+                        <h6>"El peso" - Alfonsina Storni</h6>
+                        <p>Cargo con las esperanzas<br>
+                        de quienes amo y temo,<br>
+                        sus sueños son mis cadenas,<br>
+                        sus anhelos mis grilletes,<br>
+                        ¿cuándo seré libre al fin?</p>
+                    </div>
+                </div>
+
+                <div class="poem-section">
+                    <h5 class="mb-4">Poemas sobre la superación personal</h5>
+                    
+                    <div class="poem">
+                        <h6>"Renacer" - Gabriela Mistral</h6>
+                        <p>De las cenizas me levanto,<br>
+                        cual ave fénix renacida.<br>
+                        Cada cicatriz es un mapa,<br>
+                        cada dolor una victoria,<br>
+                        cada lágrima un nuevo amanecer.</p>
+                    </div>
+
+                    <div class="poem">
+                        <h6>"El camino" - Antonio Machado</h6>
+                        <p>Caminante, son tus huellas<br>
+                        el camino, y nada más;<br>
+                        caminante, no hay camino,<br>
+                        se hace camino al andar.</p>
+                    </div>
+
+                    <div class="poem">
+                        <h6>"Fortaleza" - Miguel Hernández</h6>
+                        <p>En la tempestad más oscura,<br>
+                        brilla la luz de mi esperanza.<br>
+                        No hay obstáculo tan alto,<br>
+                        ni derrota tan profunda,<br>
+                        que no pueda superar.</p>
+                    </div>
+                </div>
+
+                <div class="card mb-4" style="width: 18rem;">
+                    <img src="poemas-en-español.png" class="card-img-top" alt="Más poemas">
+                    <div class="card-body">
+                        <h5 class="card-title">Mas poemas</h5>
+                        <p class="card-text">Si lo que has visto de momento te ha gustado, te recomendamos que leas estos 100 poemas de la lengua española.</p>
+                        <a href="https://www.clara.es/estilo-de-vida/poemas-bonitos-lengua-espanola_26923" class="btn btn-primary">Ir a leer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Sobre Nosotros</h5>
+                    <p>Voces en Silencio es un espacio dedicado a compartir la belleza de la poesía en español.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="emociones.html" class="text-light">Inicio</a></li>
+                        <li><a href="#" class="text-light">Poemas Populares</a></li>
+                        <li><a href="#" class="text-light">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <div class="social-links">
+                      <a href="#" class="text-light me-2">Facebook</a>
+                        <a href="#" class="text-light me-2">Twitter</a>
+                        <a href="#" class="text-light">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+                
